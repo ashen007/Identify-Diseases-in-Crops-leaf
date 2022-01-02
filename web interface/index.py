@@ -1,9 +1,8 @@
 import base64
 import tensorflow as tf
 import numpy as np
-import cv2 as cv
+import pandas as pd
 import plotly.graph_objs as go
-import plotly.express as px
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output, State
@@ -68,11 +67,15 @@ def b64_to_numpy(string, to_scalar=True):
 
 def parse_contents(contents, filename):
     return html.Div([
-        html.H5(filename),
+        # html.H5(filename),
         # HTML images accept base64 encoded strings in the same format
         # that is supplied by the upload
-        html.Img(src=contents)
-    ])
+        html.Img(src=contents,
+                 style={'width': '100%'})
+    ], style={'width': '100%',
+              'height': 'fit-content',
+              'padding': '28px',
+              'box-sizing': 'border-box'})
 
 
 def parse_image(contents):
@@ -95,14 +98,39 @@ def parse_image(contents):
     image = image.reshape((1, 96, 96, 3))
     pred = model.predict(image)
     p = zip(list(classes_), list(pred[0]))
-    p = sorted(list(p), key=lambda z: z[1], reverse=True)[:4]
-    print(f'{p[0][0]}: {round(p[0][1] * 100, 2)}% \n {p[1][0]}: {round(p[1][1] * 100, 2)}%')
+    p = sorted(list(p), key=lambda z: z[1], reverse=True)[:20]
+    temp = pd.DataFrame(data=p, columns=['label', 'prob'])
+    temp['text'] = [f'{round(t * 100, 2)}%' for t in temp.prob]
 
-    return html.Div([html.P(
-        f'{p[0][0]}: {round(p[0][1] * 100, 2)}%\n'
-        f'{p[1][0]}: {round(p[1][1] * 100, 2)}%\n'
-        f'{p[2][0]}: {round(p[2][1] * 100, 2)}%\n'
-        f'{p[3][0]}: {round(p[3][1] * 100, 2)}%\n')])
+    bar = go.Figure(data=[go.Bar(x=temp.prob,
+                                 y=temp.label,
+                                 text=temp.text,
+                                 orientation='h')])
+    bar.update_layout(hovermode=False,
+                      paper_bgcolor='#fff',
+                      plot_bgcolor='#fff',
+                      height=800,
+                      margin_pad=10,
+                      xaxis=dict(showline=False,
+                                 showgrid=False,
+                                 showticklabels=False),
+                      yaxis=dict(showline=False,
+                                 showgrid=False)
+                      )
+
+    return html.Div([html.H2('ILDD app'),
+                     html.P('for detections upload a image to agent which is plant type'
+                            'among Apple, Cassava, Cherry, Corn, Grape, Orange, Pepper,'
+                            'Potato, Rice, Strawberry, Tomato.'),
+                     dcc.Graph(id='bar',
+                               figure=bar,
+                               config={
+                                   'displayModeBar': False
+                               },
+                               style={'position': 'static',
+                                      'padding': '0px 30px'}
+                               )
+                     ])
 
 
 @app.callback([Output('output-image-upload', 'children'), Output('results', 'children')],
