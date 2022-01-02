@@ -2,3 +2,9 @@ body {
     width: 92%;
     margin: 21px auto;
 }
+
+#upload-image {
+    width: 50%;
+    float: left;
+    position: relative;
+}
