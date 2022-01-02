@@ -28,15 +28,20 @@ app.layout = html.Div([html.Div([
             'borderStyle': 'dashed',
             'borderRadius': '5px',
             'textAlign': 'center',
-            'margin': '10px'
+            'margin': '0'
         },
         # Allow multiple files to be uploaded
         multiple=False
     ),
     html.Div(id='output-image-upload')
-]),
-    html.Div(id='results')
-])
+], style={
+    'width': '50%'
+}),
+    html.Div(id='results',
+             style={
+                 'width': '50%'
+             })
+], style={'display': 'flex'})
 
 
 def b64_to_pil(string):
