@@ -1,0 +1,11 @@
+python 3.9
+numpy
+pandas
+tensorflow
+seaborn
+matplotlib
+opencv-python
+plotly
+dash
+flask
+gunicorn
