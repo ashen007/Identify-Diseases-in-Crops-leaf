@@ -12,7 +12,11 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import com.example.ildd.ml.VggnetBeWa
+import org.tensorflow.lite.DataType
 import org.tensorflow.lite.Interpreter
+import org.tensorflow.lite.support.image.TensorImage
+import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.io.FileInputStream
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
@@ -20,10 +24,10 @@ import java.nio.MappedByteBuffer
 import java.nio.channels.FileChannel
 import java.util.*
 import kotlin.Comparator
+import kotlin.math.min
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var interpreter: Interpreter
-    private lateinit var labelList: List<String>
+
     private val IMAGE_MEAN = 0
     private val IMAGE_STD = 255.0f
     private val MAX_RESULTS = 4
@@ -42,26 +46,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    init {
-        val options = Interpreter.Options()
-        options.setNumThreads(5)
-        options.setUseNNAPI(true)
-        interpreter = Interpreter(loadModelFile(application.assets, "VGGNet_BE_WA.tflite"), options)
-        labelList = loadLabelList(application.assets, "labels.txt")
-    }
-
-    private fun loadModelFile(assetManager: AssetManager, modelPath: String): MappedByteBuffer {
-        val fileDescriptor = assetManager.openFd(modelPath)
+    private fun loadModelFile(modelPath: String): MappedByteBuffer {
+        val fileDescriptor = application.assets.openFd(modelPath)
         val inputStream = FileInputStream(fileDescriptor.fileDescriptor)
         val fileChannel = inputStream.channel
         val startOffset = fileDescriptor.startOffset
         val declaredLength = fileDescriptor.declaredLength
         return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength)
-    }
-
-    private fun loadLabelList(assetManager: AssetManager, labelPath: String): List<String> {
-        return assetManager.open(labelPath).bufferedReader().useLines { it.toList() }
-
     }
 
     // convert bitmap to float array and scale to 0-1 range
@@ -92,6 +83,14 @@ class MainActivity : AppCompatActivity() {
 
         var load_img: Button = findViewById(R.id.btn_load_image)
         var tv: TextView = findViewById(R.id.tv_output)
+        val fileName = "labels.txt"
+        val labelList =
+            application.assets.open(fileName).bufferedReader().useLines { it.toList() }
+
+        val options = Interpreter.Options()
+        options.setNumThreads(5)
+        options.setUseNNAPI(true)
+        var interpreter = Interpreter(loadModelFile("VGGNet_BE_WA.tflite"), options)
 
         // fire actions when click on load image button
         load_img.setOnClickListener(View.OnClickListener {
@@ -109,14 +108,27 @@ class MainActivity : AppCompatActivity() {
         predict.setOnClickListener(View.OnClickListener {
 
             var resized: Bitmap = Bitmap.createScaledBitmap(bitmap, 56, 56, false)
-
-            // Creates inputs for reference.
-            val scaledBitmap = Bitmap.createScaledBitmap(bitmap, 56, 56, false)
-            val byteBuffer = convertBitmapToByteBuffer(scaledBitmap)
+//            val model = VggnetBeWa.newInstance(this)
+//
+//            // Creates inputs for reference.
+//            val inputFeature0 =
+//                TensorBuffer.createFixedSize(intArrayOf(1, 56, 56, 3), DataType.FLOAT32)
+            val byteBuffer = convertBitmapToByteBuffer(resized)
             val result = Array(1) { FloatArray(labelList.size) }
             interpreter.run(byteBuffer, result)
 
-            tv.setText(getSortedResult(result).toString())
+            tv.setText(getSortedResult(result, labelList).toString())
+
+//            inputFeature0.loadBuffer(byteBuffer)
+//
+//            // Runs model inference and gets result.
+//            val outputs = model.process(inputFeature0)
+//            val outputFeature0 = outputs.outputFeature0AsTensorBuffer
+//
+//            tv.setText(outputFeature0.floatArray[0].toString())
+//
+//            // Releases model resources if no longer used.
+//            model.close()
 
         })
 
@@ -134,13 +146,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     // get sorted results to show
-    private fun getSortedResult(labelProbArray: Array<FloatArray>): List<MainActivity.Recognition> {
-        Log.d(
-            "Classifier",
-            "List Size:(%d,%d,%d)".format(
-                labelProbArray.size, labelProbArray[0].size, labelList.size
-            )
-        )
+    fun getSortedResult(
+        labelProbArray: Array<FloatArray>,
+        labelList: List<String>
+    ): List<MainActivity.Recognition> {
 
         val pq = PriorityQueue(
             MAX_RESULTS,
