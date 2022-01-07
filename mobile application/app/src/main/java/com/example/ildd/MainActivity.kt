@@ -12,26 +12,24 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.ildd.ml.VggnetBeWa
-import org.tensorflow.lite.DataType
 import org.tensorflow.lite.Interpreter
-import org.tensorflow.lite.support.image.TensorImage
-import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
+import java.io.FileInputStream
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
+import java.nio.MappedByteBuffer
+import java.nio.channels.FileChannel
 import java.util.*
 import kotlin.Comparator
-import kotlin.math.min
 
 class MainActivity : AppCompatActivity() {
-
+    private lateinit var interpreter: Interpreter
+    private lateinit var labelList: List<String>
     private val IMAGE_MEAN = 0
     private val IMAGE_STD = 255.0f
     private val MAX_RESULTS = 4
     private val THRESHOLD = 0.4f
     lateinit var bitmap: Bitmap
     lateinit var imageView: ImageView
-    var labelList = loadLabelList(application.assets, "labels.txt")
 
     // output creation function
     data class Recognition(
@@ -42,6 +40,23 @@ class MainActivity : AppCompatActivity() {
         override fun toString(): String {
             return "Title = $title, Confidence = $confidence"
         }
+    }
+
+    init {
+        val options = Interpreter.Options()
+        options.setNumThreads(5)
+        options.setUseNNAPI(true)
+        interpreter = Interpreter(loadModelFile(application.assets, "VGGNet_BE_WA.tflite"), options)
+        labelList = loadLabelList(application.assets, "labels.txt")
+    }
+
+    private fun loadModelFile(assetManager: AssetManager, modelPath: String): MappedByteBuffer {
+        val fileDescriptor = assetManager.openFd(modelPath)
+        val inputStream = FileInputStream(fileDescriptor.fileDescriptor)
+        val fileChannel = inputStream.channel
+        val startOffset = fileDescriptor.startOffset
+        val declaredLength = fileDescriptor.declaredLength
+        return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength)
     }
 
     private fun loadLabelList(assetManager: AssetManager, labelPath: String): List<String> {
@@ -94,25 +109,14 @@ class MainActivity : AppCompatActivity() {
         predict.setOnClickListener(View.OnClickListener {
 
             var resized: Bitmap = Bitmap.createScaledBitmap(bitmap, 56, 56, false)
-            val model = VggnetBeWa.newInstance(this)
 
             // Creates inputs for reference.
-            val inputFeature0 =
-                TensorBuffer.createFixedSize(intArrayOf(1, 56, 56, 3), DataType.FLOAT32)
-            var byteBuffer = convertBitmapToByteBuffer(resized)
+            val scaledBitmap = Bitmap.createScaledBitmap(bitmap, 56, 56, false)
+            val byteBuffer = convertBitmapToByteBuffer(scaledBitmap)
+            val result = Array(1) { FloatArray(labelList.size) }
+            interpreter.run(byteBuffer, result)
 
-            inputFeature0.loadBuffer(byteBuffer)
-
-            // Runs model inference and gets result.
-            val outputs = model.process(inputFeature0)
-            val outputFeature0 = outputs.outputFeature0AsTensorBuffer
-
-            bestPreds = getSortedResult()
-
-            tv.setText()
-
-            // Releases model resources if no longer used.
-            model.close()
+            tv.setText(getSortedResult(result).toString())
 
         })
 
