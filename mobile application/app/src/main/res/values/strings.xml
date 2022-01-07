@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ILDD</string>
+    <string name="output">Output</string>
+    <string name="take_image">take image</string>
+    <string name="load_image">load image</string>
+    <string name="results">results</string>
+</resources>
