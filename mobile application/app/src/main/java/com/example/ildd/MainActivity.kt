@@ -1,22 +1,16 @@
 package com.example.ildd
 
 import android.content.Intent
-import android.content.res.AssetManager
 import android.graphics.Bitmap
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import com.example.ildd.ml.VggnetBeWa
-import org.tensorflow.lite.DataType
 import org.tensorflow.lite.Interpreter
-import org.tensorflow.lite.support.image.TensorImage
-import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.io.FileInputStream
 import java.nio.ByteBuffer
 import java.nio.ByteOrder
@@ -24,14 +18,13 @@ import java.nio.MappedByteBuffer
 import java.nio.channels.FileChannel
 import java.util.*
 import kotlin.Comparator
-import kotlin.math.min
 
 class MainActivity : AppCompatActivity() {
 
     private val IMAGE_MEAN = 0
     private val IMAGE_STD = 255.0f
     private val MAX_RESULTS = 4
-    private val THRESHOLD = 0.4f
+    private val THRESHOLD = 0.1f
     lateinit var bitmap: Bitmap
     lateinit var imageView: ImageView
 
@@ -108,27 +101,12 @@ class MainActivity : AppCompatActivity() {
         predict.setOnClickListener(View.OnClickListener {
 
             var resized: Bitmap = Bitmap.createScaledBitmap(bitmap, 56, 56, false)
-//            val model = VggnetBeWa.newInstance(this)
-//
-//            // Creates inputs for reference.
-//            val inputFeature0 =
-//                TensorBuffer.createFixedSize(intArrayOf(1, 56, 56, 3), DataType.FLOAT32)
+
             val byteBuffer = convertBitmapToByteBuffer(resized)
             val result = Array(1) { FloatArray(labelList.size) }
             interpreter.run(byteBuffer, result)
 
             tv.setText(getSortedResult(result, labelList).toString())
-
-//            inputFeature0.loadBuffer(byteBuffer)
-//
-//            // Runs model inference and gets result.
-//            val outputs = model.process(inputFeature0)
-//            val outputFeature0 = outputs.outputFeature0AsTensorBuffer
-//
-//            tv.setText(outputFeature0.floatArray[0].toString())
-//
-//            // Releases model resources if no longer used.
-//            model.close()
 
         })
 

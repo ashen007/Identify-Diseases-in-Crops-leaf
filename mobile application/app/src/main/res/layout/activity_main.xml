@@ -28,8 +28,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="350dp"
-        android:layout_height="500dp"
+        android:layout_width="416dp"
+        android:layout_height="309dp"
         android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -49,26 +49,27 @@
         app:layout_constraintTop_toBottomOf="@id/btn_predict"
         />
 
-    <TextView
-        android:id="@+id/tv_output"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/results"
-        android:textColor="@android:color/white"
-        android:textSize="18sp"
-        app:layout_constraintStart_toEndOf="@id/textView"
-        app:layout_constraintTop_toBottomOf="@id/btn_predict"
-        android:layout_marginTop="24dp"/>
+    <!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="show more"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/textView"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginStart="36dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:textSize="14dp"/>-->
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="show more"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        android:layout_marginTop="8dp"
-        android:layout_marginStart="36dp"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textSize="14dp"/>
+        android:id="@+id/tv_output"
+        android:layout_width="296dp"
+        android:layout_height="254dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/results"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/btn_predict" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidline2"
