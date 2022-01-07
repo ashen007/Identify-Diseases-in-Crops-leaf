@@ -17,11 +17,11 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/btn_capture_image"
+        android:id="@+id/btn_predict"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
-        android:text="@string/take_image"
+        android:text="predict"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@id/guidline2"
         app:layout_constraintTop_toBottomOf="@id/imageView" />
@@ -46,7 +46,7 @@
         android:textColor="@android:color/darker_gray"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_capture_image"
+        app:layout_constraintTop_toBottomOf="@id/btn_predict"
         />
 
     <TextView
@@ -57,7 +57,7 @@
         android:textColor="@android:color/black"
         android:textSize="18sp"
         app:layout_constraintStart_toEndOf="@id/textView"
-        app:layout_constraintTop_toBottomOf="@id/btn_capture_image"
+        app:layout_constraintTop_toBottomOf="@id/btn_predict"
         android:layout_marginTop="24dp"/>
 
     <TextView

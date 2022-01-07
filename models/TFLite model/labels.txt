@@ -1,0 +1,42 @@
+Apple
+Apple scab
+Bacterial Blight (CBB)
+Bacterial spot
+Black rot
+Brown Streak Disease (CBSD)
+BrownSpot
+Cassava
+Cedar apple rust
+Cercospora leaf spot Gray leaf spot
+Cherry (including sour)
+Common rust
+Corn (maize)
+Early blight
+Esca (Black Measles)
+Grape
+Green Mottle (CGM)
+Haunglongbing (Citrus greening)
+Healthy
+Hispa
+Late blight
+Leaf Mold
+Leaf blight (Isariopsis Leaf Spot)
+Leaf scorch
+LeafBlast
+Mosaic Disease (CMD)
+Northern Leaf Blight
+Orange
+Peach
+Pepper, bell
+Potato
+Powdery mildew
+Rice
+Septoria leaf spot
+Spider mites Two-spotted spider mite
+Squash
+Strawberry
+Target Spot
+Tomato
+Tomato Yellow Leaf Curl Virus
+Tomato mosaic virus
+healthy
