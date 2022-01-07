@@ -40,13 +40,14 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="24dp"
         android:text="output: "
         android:textColor="@android:color/darker_gray"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_capture_image" />
+        app:layout_constraintTop_toBottomOf="@id/btn_capture_image"
+        />
 
     <TextView
         android:id="@+id/tv_output"
@@ -59,7 +60,15 @@
         app:layout_constraintTop_toBottomOf="@id/btn_capture_image"
         android:layout_marginTop="24dp"/>
 
-
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="show more"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="14dp"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidline2"
