@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
         val options = Interpreter.Options()
         options.setNumThreads(5)
         options.setUseNNAPI(true)
-        var interpreter = Interpreter(loadModelFile("VGGNet_BE_WA.tflite"), options)
+        var interpreter = Interpreter(loadModelFile("MI_WOAD_BE.tflite"), options)
 
         // fire actions when click on load image button
         load_img.setOnClickListener(View.OnClickListener {

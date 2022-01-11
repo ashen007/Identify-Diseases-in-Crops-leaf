@@ -3,7 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/ML &amp; DL/Leaf Disease/mobile application/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/ML &amp; DL/Leaf Disease/mobile application/app/src/main/res/layout/activity_main.xml" value="0.30117753623188404" />
       </map>
     </option>
   </component>
@@ -12,12 +12,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.36666666666666664" />
-      </ProjectState>
-    </option>
   </component>
 </project>
