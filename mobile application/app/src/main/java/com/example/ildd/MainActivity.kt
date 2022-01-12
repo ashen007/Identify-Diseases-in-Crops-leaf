@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     private val IMAGE_MEAN = 0
     private val IMAGE_STD = 255.0f
     private val MAX_RESULTS = 4
-    private val THRESHOLD = 0.1f
+    private val THRESHOLD = 0.4f
     lateinit var bitmap: Bitmap
     lateinit var imageView: ImageView
 
