@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
     private val IMAGE_MEAN = 0
     private val IMAGE_STD = 255.0f
     private val MAX_RESULTS = 4
-    private val THRESHOLD = 0.1f
+    private val THRESHOLD = 0.4f
     lateinit var bitmap: Bitmap
     lateinit var imageView: ImageView
 
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity() {
         val options = Interpreter.Options()
         options.setNumThreads(5)
         options.setUseNNAPI(true)
-        var interpreter = Interpreter(loadModelFile("VGGNet_BE_WA.tflite"), options)
+        var interpreter = Interpreter(loadModelFile("MI_WOAD_BE.tflite"), options)
 
         // fire actions when click on load image button
         load_img.setOnClickListener(View.OnClickListener {

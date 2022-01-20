@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2B2B2B"
     tools:context=".MainActivity">
 
     <Button
@@ -46,18 +47,17 @@
         android:textColor="@android:color/darker_gray"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btn_predict"
-        />
+        app:layout_constraintTop_toBottomOf="@id/btn_predict" />
 
     <!--    <TextView-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="show more"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/textView"-->
-<!--        android:layout_marginTop="8dp"-->
-<!--        android:layout_marginStart="36dp"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        android:textSize="14dp"/>-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="show more"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/textView"-->
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:layout_marginStart="36dp"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        android:textSize="14dp"/>-->
 
     <TextView
         android:id="@+id/tv_output"
