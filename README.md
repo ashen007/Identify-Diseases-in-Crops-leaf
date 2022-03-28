@@ -2,9 +2,11 @@
 
 ## Planter android application
 
-<img src="images/mobile%20application%20mockup/Screenshot_20220317-115326.png" style="width: 210px" alt="mock-up">
-<img src="images/mobile%20application%20mockup/Group%2020.png" style="width: 240px" alt="mock-up">
-<img src="images/mobile%20application%20mockup/Screenshot_20220317-115415.png" style="width: 210px" alt="mock-up">
+<img src="images/mobile%20application%20mockup/Screenshot_20220317-115326.png" style="width: 210px" alt="mock-up"><img src="images/mobile%20application%20mockup/Group%2020.png" style="width: 240px" alt="mock-up"><img src="images/mobile%20application%20mockup/Screenshot_20220317-115415.png" style="width: 210px" alt="mock-up">
+
+### 👩🏻‍🌾 Download Planter application from [here](https://crop-foundation-home.herokuapp.com/download).
+
+### for more details about planter 👉🏻 [Planter](https://crop-foundation-home.herokuapp.com/)
 
 <p style="text-align: justify">
 After extreme weather conditions and natural disasters, plant diseases and pests play a bigger role in the loss of our  
