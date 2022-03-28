@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onboard__5"
+    tools:context=".fragments.onboard.OnBoardFragmentFive">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12sp"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/on_board_five_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18sp"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/abel"
+            android:text="@string/increase_your_yield" />
+
+        <TextView
+            android:id="@+id/on_board_five_dtl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:layout_marginBottom="8sp"
+            android:textColor="@color/white"
+            android:gravity="bottom"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/abel"
+            android:text="@string/improve_your_cultivation_knowledge_with_our_cultivation_tips" />
+
+        <ImageButton
+            android:id="@+id/nextScreen5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_planter_arrow"
+            android:backgroundTint="#00494747"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+</FrameLayout>

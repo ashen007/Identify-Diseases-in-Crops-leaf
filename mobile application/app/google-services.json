@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "290043625434",
+    "project_id": "planter-d1e3c",
+    "storage_bucket": "planter-d1e3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:290043625434:android:ec232d9d7d9cb50a760ae3",
+        "android_client_info": {
+          "package_name": "com.example.planter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "290043625434-5ekd4mnmiaa0r9bvlm1h73pa4oth2miq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDVHwcUeOfyoUGheBh1MCV9FC4XEhGydE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "290043625434-5ekd4mnmiaa0r9bvlm1h73pa4oth2miq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

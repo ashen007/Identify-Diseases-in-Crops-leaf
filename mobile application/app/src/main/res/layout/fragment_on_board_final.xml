@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/onboard__6"
+    tools:context=".fragments.onboard.OnBoardFragmentFinal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24sp"
+            android:layout_marginStart="36sp"
+            android:textSize="48sp"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:text="@string/planter"
+            android:fontFamily="@font/abel"
+            android:layout_marginBottom="360sp"/>
+
+        <TextView
+            android:id="@+id/on_board_final_dtl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24sp"
+            android:layout_marginStart="36sp"
+            android:layout_marginTop="18sp"
+            android:layout_marginBottom="48sp"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/abel"
+            android:text="@string/your_cultivation_nconsultant" />
+
+        <Button
+            android:id="@+id/onboard_end"
+            android:layout_width="150sp"
+            android:layout_height="64sp"
+            android:layout_marginStart="36sp"
+            android:layout_marginBottom="56sp"
+            android:background="@drawable/planter_button"
+            android:text="@string/get_start" />
+
+    </LinearLayout>
+
+</FrameLayout>

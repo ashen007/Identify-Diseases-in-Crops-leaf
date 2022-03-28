@@ -1,36 +1,42 @@
-Apple
-Apple scab
-Bacterial spot
-Black rot
-BrownSpot
-Cedar apple rust
-Cercospora leaf spot Gray leaf spot
-Cherry (including sour)
-Common rust
-Corn (maize)
-Early blight
-Esca (Black Measles)
-Grape
-Haunglongbing (Citrus greening)
-Healthy
-Hispa
-Late blight
-Leaf Mold
-Leaf blight (Isariopsis Leaf Spot)
-Leaf scorch
-LeafBlast
-Northern Leaf Blight
-Orange
-Peach
-Pepper, bell
-Potato
-Powdery mildew
-Rice
-Septoria leaf spot
-Spider mites Two-spotted spider mite
-Squash
-Strawberry
-Target Spot
-Tomato
-Tomato Yellow Leaf Curl Virus
-Tomato mosaic virus
+apple, apple scab
+apple, black rot
+apple, cedar apple rust
+apple, healthy
+banana, healthy
+banana, segatoka
+banana, xamthomonas
+cherry, (including sour) healthy
+cherry, (including sour) powdery mildew
+corn, (maize) cercospora leaf spot gray leaf spot
+corn, (maize) common rust
+corn, (maize) healthy
+corn, (maize) northern leaf blight
+grape, black rot
+grape, esca (black measles)
+grape, healthy
+grape, leaf blight (isariopsis leaf spot)
+orange, haunglongbing (citrus greening)
+bell pepper, bacterial spot
+bell pepper, healthy
+potato, early blight
+potato, healthy
+potato, late blight
+rice, brownspot
+rice, healthy
+rice, hispa
+rice, leafblast
+strawberry, healthy
+strawberry, leaf scorch
+tea, leaf blight
+tea, red leaf spot
+tea, red scab
+tomato, bacterial spot
+tomato, early blight
+tomato, healthy
+tomato, late blight
+tomato, leaf mold
+tomato, septoria leaf spot
+tomato, spider mites two-spotted spider mite
+tomato, target spot
+tomato, tomato mosaic virus
+tomato, tomato yellow leaf curl virus

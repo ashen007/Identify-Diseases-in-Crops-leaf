@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="top_part">
+        <item name="cornerSizeTopLeft">16sp</item>
+        <item name="cornerSizeTopRight">16sp</item>
+    </style>
+</resources>

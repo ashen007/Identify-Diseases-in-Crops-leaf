@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.FragmentLevel">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="24sp"
+        android:paddingBottom="24sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="284sp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20sp">
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8sp"
+                    android:background="@drawable/roundcorner_text"
+                    android:backgroundTint="@color/ascent_bg"
+                    android:paddingLeft="24sp"
+                    android:paddingTop="8sp"
+                    android:paddingRight="24sp"
+                    android:paddingBottom="8sp"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/crop_title"
+                    android:layout_width="198sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abel"
+                    android:textColor="@color/light_text"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/sci_name"
+                    android:layout_width="198sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:fontFamily="@font/abel"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/duration"
+                    android:layout_width="198sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:fontFamily="@font/abel"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="200sp"
+                android:layout_height="200sp"
+                android:background="@drawable/circule" />
+
+            <ImageView
+                android:id="@+id/banner_img"
+                android:layout_width="142sp"
+                android:layout_height="142sp"
+                android:layout_marginLeft="-224sp"
+                android:layout_marginTop="42sp"
+                android:rotation="12" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/app_bg_glob"
+        android:paddingBottom="24sp"
+        android:scrollbars="none"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12sp"
+            android:layout_marginTop="24sp"
+            android:layout_marginEnd="12sp"
+            android:layout_marginBottom="24sp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12sp"
+                android:layout_marginBottom="12sp"
+                android:elevation="6sp"
+                android:orientation="vertical"
+                android:padding="8sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/table_top"
+                        android:orientation="vertical"
+                        android:padding="12sp">
+
+                        <TextView
+                            android:id="@+id/variant_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abel"
+                            android:text="@string/variants"
+                            android:textColor="@color/dark_text"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/variant"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abel"
+                            android:textColor="@color/dark_text"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3sp"
+                        android:background="@drawable/table_row"
+                        android:orientation="vertical"
+                        android:padding="12sp">
+
+                        <TextView
+                            android:id="@+id/space_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abel"
+                            android:text="@string/space_need_for_single_plant"
+                            android:textColor="@color/dark_text"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/space"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abel"
+                            android:textColor="@color/dark_text"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3sp"
+                        android:background="@drawable/table_row"
+                        android:orientation="vertical"
+                        android:padding="12sp">
+
+                        <TextView
+                            android:id="@+id/com_challenge_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abel"
+                            android:text="@string/most_common_challange"
+                            android:textColor="@color/dark_text"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/com_challenge"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abel"
+                            android:textColor="@color/dark_text"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3sp"
+                        android:background="@drawable/table_foot"
+                        android:orientation="vertical"
+                        android:padding="12sp">
+
+                        <TextView
+                            android:id="@+id/critic_needs_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abel"
+                            android:text="@string/critical_needs"
+                            android:textColor="@color/dark_text"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/critic_needs"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/abel"
+                            android:textColor="@color/dark_text"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="212sp"
+                android:layout_marginTop="12sp"
+                android:layout_marginBottom="12sp"
+                android:orientation="vertical"
+                android:padding="8sp">
+
+                <ImageButton
+                    android:id="@+id/prep_soil"
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:background="@drawable/round_cards"
+                    android:backgroundTint="@color/white_bg"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/soil_text"
+                    android:layout_width="190sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-200.5sp"
+                    android:fontFamily="@font/abel"
+                    android:gravity="top"
+                    android:padding="12sp"
+                    android:text="@string/preparation_of_soil"
+                    android:textColor="@color/dark_text"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="180sp"
+                    android:layout_height="180sp"
+                    android:layout_marginStart="240sp"
+                    android:layout_marginTop="-90sp"
+                    android:background="@drawable/cercular" />
+
+                <ImageView
+                    android:layout_width="180sp"
+                    android:layout_height="180sp"
+                    android:layout_marginStart="190sp"
+                    android:layout_marginTop="-160sp"
+                    android:src="@drawable/soil_prep_card_img" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="212sp"
+                android:layout_marginTop="12sp"
+                android:layout_marginBottom="12sp"
+                android:orientation="vertical"
+                android:padding="8sp">
+
+                <ImageButton
+                    android:id="@+id/sowing"
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:background="@drawable/round_cards"
+                    android:backgroundTint="@color/white_bg"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/sowing_text"
+                    android:layout_width="190sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-200.5sp"
+                    android:elevation="4sp"
+                    android:fontFamily="@font/abel"
+                    android:gravity="top"
+                    android:padding="12sp"
+                    android:text="@string/sowing"
+                    android:textColor="@color/dark_text"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="180sp"
+                    android:layout_height="180sp"
+                    android:layout_marginStart="240sp"
+                    android:layout_marginTop="-90sp"
+                    android:background="@drawable/cercular" />
+
+                <ImageView
+                    android:layout_width="160sp"
+                    android:layout_height="160sp"
+                    android:layout_marginStart="210sp"
+                    android:layout_marginTop="-147sp"
+                    android:src="@drawable/sowing_img" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="212sp"
+                android:layout_marginTop="12sp"
+                android:layout_marginBottom="12sp"
+                android:orientation="vertical"
+                android:padding="8sp">
+
+                <ImageButton
+                    android:id="@+id/fert"
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:background="@drawable/round_cards"
+                    android:backgroundTint="@color/white_bg"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/fert_text"
+                    android:layout_width="190sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-200.5sp"
+                    android:elevation="4sp"
+                    android:fontFamily="@font/abel"
+                    android:gravity="top"
+                    android:padding="12sp"
+                    android:text="@string/adding_manure_and_fertilizers"
+                    android:textColor="@color/dark_text"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="180sp"
+                    android:layout_height="180sp"
+                    android:layout_marginStart="240sp"
+                    android:layout_marginTop="-125sp"
+                    android:background="@drawable/cercular" />
+
+                <ImageView
+                    android:layout_width="150sp"
+                    android:layout_height="150sp"
+                    android:layout_marginStart="220sp"
+                    android:layout_marginTop="-130sp"
+                    android:src="@drawable/fertilizers" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="212sp"
+                android:layout_marginTop="12sp"
+                android:layout_marginBottom="12sp"
+                android:orientation="vertical"
+                android:padding="8sp">
+
+                <ImageButton
+                    android:id="@+id/watering"
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:background="@drawable/round_cards"
+                    android:backgroundTint="@color/white_bg"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/water_text"
+                    android:layout_width="190sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-200.5sp"
+                    android:elevation="4sp"
+                    android:fontFamily="@font/abel"
+                    android:gravity="top"
+                    android:padding="12sp"
+                    android:text="@string/irrigation"
+                    android:textColor="@color/dark_text"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="180sp"
+                    android:layout_height="180sp"
+                    android:layout_marginStart="240sp"
+                    android:layout_marginTop="-90sp"
+                    android:background="@drawable/cercular" />
+
+                <ImageView
+                    android:layout_width="150sp"
+                    android:layout_height="150sp"
+                    android:layout_marginStart="220sp"
+                    android:layout_marginTop="-145sp"
+                    android:src="@drawable/watering" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="212sp"
+                android:layout_marginTop="12sp"
+                android:layout_marginBottom="12sp"
+                android:orientation="vertical"
+                android:padding="8sp">
+
+                <ImageButton
+                    android:id="@+id/harvest"
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    android:background="@drawable/round_cards"
+                    android:backgroundTint="@color/white_bg"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/harv_text"
+                    android:layout_width="190sp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-200.5sp"
+                    android:elevation="4sp"
+                    android:fontFamily="@font/abel"
+                    android:gravity="top"
+                    android:padding="12sp"
+                    android:text="@string/harvesting_and_storage"
+                    android:textColor="@color/dark_text"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="180sp"
+                    android:layout_height="180sp"
+                    android:layout_marginStart="240sp"
+                    android:layout_marginTop="-90sp"
+                    android:background="@drawable/cercular" />
+
+                <ImageView
+                    android:layout_width="150sp"
+                    android:layout_height="150sp"
+                    android:layout_marginStart="220sp"
+                    android:layout_marginTop="-145sp"
+                    android:src="@drawable/harvesting" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
