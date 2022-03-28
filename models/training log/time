@@ -1,6 +1,6 @@
 {
   "vgg": "5hr 25min",
   "inception": "4hr 38min",
-  "hybrid-without-regularization-data": "3hr 41min",
-  "hybrid-with-regularization-data": "4hr 43min"
+  "hybrid-without-extra-data": "3hr 41min",
+  "hybrid-with-extra-data": "4hr 43min"
 }
