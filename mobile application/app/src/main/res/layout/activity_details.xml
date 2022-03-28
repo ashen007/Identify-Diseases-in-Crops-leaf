@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="false"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".DetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/ivPredPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="348sp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-36sp"
+        android:fillViewport="false"
+        android:orientation="vertical"
+        android:scrollbars="none"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingClass">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/paralax_card"
+                android:elevation="8sp"
+                android:orientation="vertical"
+                android:paddingTop="32sp"
+                android:paddingBottom="24sp">
+
+                <RelativeLayout
+                    android:id="@+id/topPred"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12sp"
+                    android:layout_marginTop="24sp"
+                    android:layout_marginEnd="12sp"
+                    android:layout_marginBottom="24sp"
+                    android:background="@drawable/roundcorner_text"
+                    android:backgroundTint="@color/light_bg"
+                    android:elevation="12sp">
+
+                    <TextView
+                        android:id="@+id/topClass"
+                        android:layout_width="340sp"
+                        android:layout_height="128sp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/baloo"
+                        android:padding="12sp"
+                        android:textAlignment="viewStart"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/topDtl"
+                        android:layout_width="340sp"
+                        android:layout_height="56sp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:fontFamily="@font/baloo"
+                        android:padding="12sp"
+                        android:text="@string/confidence"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tvActionCaution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12sp"
+                        android:layout_marginEnd="12sp"
+                        android:background="@drawable/roundcorner_text"
+                        android:backgroundTint="@color/ascent_bg"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent"
+                        tools:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="24sp"
+                            android:layout_height="24sp"
+                            android:layout_marginStart="12sp"
+                            android:layout_marginTop="28sp"
+                            android:layout_marginBottom="24sp"
+                            android:background="@drawable/ic_baseline_error_outline_24" />
+
+                        <TextView
+                            android:id="@+id/textView6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="0sp"
+                            android:layout_marginTop="12sp"
+                            android:layout_marginEnd="12sp"
+                            android:layout_marginBottom="12sp"
+                            android:fontFamily="@font/baloo"
+                            android:padding="12sp"
+                            android:text="@string/caution_if_confidance_level_remakablly_low_it_s_good_to_take_new_image_from_different_angle_or_try_to_take_more_focus_photo_of_a_single_leaf"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="false"
+                            android:textSize="14sp" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/parentSymp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24sp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12sp"
+                        android:layout_marginTop="12sp"
+                        android:layout_marginEnd="12sp"
+                        android:layout_marginBottom="12sp"
+                        android:background="@drawable/round_cards"
+                        android:backgroundTint="@color/white_bg"
+                        android:orientation="vertical"
+                        android:padding="8sp"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:id="@+id/symptoms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/baloo"
+                            android:paddingStart="4sp"
+                            android:text="@string/symptoms"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/dark_text"
+                            android:textSize="18sp"
+                            tools:ignore="RtlSymmetry"
+                            tools:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/mltvSymp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:fontFamily="@font/abel"
+                            android:paddingLeft="4sp"
+                            android:paddingRight="4sp"
+                            android:paddingBottom="23sp"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/dark_text"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12sp"
+                    android:layout_marginEnd="12sp"
+                    android:layout_marginBottom="24sp"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/ivImage" />
+
+                <RelativeLayout
+                    android:id="@+id/parentMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24sp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/round_cards"
+                        android:backgroundTint="@color/white_bg"
+                        android:orientation="vertical"
+                        android:padding="8sp"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:id="@+id/more_info_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/baloo"
+                            android:paddingStart="4sp"
+                            android:text="@string/more_info"
+                            android:textAlignment="textStart"
+                            android:textColor="@color/dark_text"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvInfo1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:layout_marginBottom="8sp"
+                            android:fontFamily="@font/abel"
+                            android:textColor="@color/dark_text"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tvInfo2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8sp"
+                            android:fontFamily="@font/abel"
+                            android:textColor="@color/dark_text"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tvInfo3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8sp"
+                            android:fontFamily="@font/abel"
+                            android:textColor="@color/dark_text"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tvInfo4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8sp"
+                            android:fontFamily="@font/abel"
+                            android:textColor="@color/dark_text"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/parentRec"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24sp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/round_cards"
+                        android:backgroundTint="@color/white_bg"
+                        android:orientation="vertical"
+                        android:padding="8sp"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:id="@+id/recommendation_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/baloo"
+                            android:text="@string/recommendations"
+                            android:textColor="@color/dark_text"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/tvRecIntro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:fontFamily="@font/abel"
+                            android:textColor="@color/dark_text"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/tvRecGenMng"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:fontFamily="@font/abel"
+                            android:textColor="@color/dark_text"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:fontFamily="@font/baloo"
+                            android:text="@string/disease_control_strategy"
+                            android:textColor="@color/dark_text"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvRecStrategy"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:fontFamily="@font/abel"
+                            android:textColor="@color/dark_text"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/tvHealthyCaution"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24sp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12sp"
+                        android:layout_marginEnd="12sp"
+                        android:background="@drawable/roundcorner_text"
+                        android:backgroundTint="@color/ascent_bg"
+                        android:orientation="horizontal"
+                        tools:ignore="UselessParent">
+
+                        <ImageView
+                            android:layout_width="24sp"
+                            android:layout_height="24sp"
+                            android:layout_marginStart="12sp"
+                            android:layout_marginTop="28sp"
+                            android:layout_marginBottom="24sp"
+                            android:background="@drawable/ic_baseline_error_outline_24" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="0sp"
+                            android:layout_marginTop="12sp"
+                            android:layout_marginEnd="12sp"
+                            android:layout_marginBottom="12sp"
+                            android:fontFamily="@font/baloo"
+                            android:padding="12sp"
+                            android:text="@string/before_taking_any_action_read_the_symptoms_to_make_sure_this_recommended_diagnosis_match_your_problem"
+                            android:textAlignment="viewStart"
+                            android:textAllCaps="false"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/parentOrganic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24sp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/round_cards"
+                        android:backgroundTint="@color/white_bg"
+                        android:orientation="vertical"
+                        android:padding="8sp"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:id="@+id/org_con_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:fontFamily="@font/baloo"
+                            android:text="@string/organic_control"
+                            android:textColor="@color/dark_text"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvOrgDtl2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:layout_marginBottom="12sp"
+                            android:fontFamily="@font/abel"
+                            android:textColor="@color/dark_text"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/parentChem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24sp"
+                    tools:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/round_cards"
+                        android:backgroundTint="@color/white_bg"
+                        android:orientation="vertical"
+                        android:padding="8sp"
+                        tools:ignore="UselessParent">
+
+                        <TextView
+                            android:id="@+id/chem_con_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/baloo"
+                            android:text="@string/chemical_control"
+                            android:textColor="@color/dark_text"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/tvChemDt1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12sp"
+                            android:layout_marginBottom="4sp"
+                            android:fontFamily="@font/abel"
+                            android:textColor="@color/dark_text"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

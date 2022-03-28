@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cultivation_tips"
+    app:startDestination="@id/fragmentCrops">
+
+    <fragment
+        android:id="@+id/fragmentCrops"
+        android:name="com.example.planter.fragments.FragmentCrops"
+        android:label="fragment_crops"
+        tools:layout="@layout/fragment_crops" >
+        <action
+            android:id="@+id/action_fragmentCrops_to_fragmentLevel"
+            app:destination="@id/fragmentLevel" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentLevel"
+        android:name="com.example.planter.fragments.FragmentLevel"
+        android:label="fragment_level"
+        tools:layout="@layout/fragment_level" >
+        <action
+            android:id="@+id/action_fragmentLevel_to_fragmentCultTipResults"
+            app:destination="@id/fragmentCultTipResults" />
+        <argument
+            android:name="cropType"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_fragmentLevel_to_fragmentCrops"
+            app:destination="@id/fragmentCrops" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentCultTipResults"
+        android:name="com.example.planter.fragments.FragmentCultTipResults"
+        android:label="fragment_cult_tip_results"
+        tools:layout="@layout/fragment_cult_tip_results" >
+        <argument
+            android:name="cropType"
+            app:argType="string" />
+        <argument
+            android:name="tipType"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_fragmentCultTipResults_to_fragmentLevel"
+            app:destination="@id/fragmentLevel" />
+    </fragment>
+</navigation>

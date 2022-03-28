@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">planter</string>
+    <string name="detect_disease_of_your_crop">ඔබේ බෝගයේ රෝග හඳුනා ගන්න</string>
+    <string name="previous_detections">පෙර හඳුනාගැනීම්</string>
+    <string name="confidence">විශ්වාසය</string>
+    <string name="symptoms">රෝග ලක්ෂණ</string>
+    <string name="more_info">වැඩි විස්තර</string>
+    <string name="recommendations">නිර්දේශ</string>
+    <string name="organic_control">කාබනික පාලනය</string>
+    <string name="chemical_control">රසායනික පාලනය</string>
+    <string name="caution_if_confidance_level_remakablly_low_it_s_good_to_take_new_image_from_different_angle_or_try_to_take_more_focus_photo_of_a_single_leaf">අවවාදයයි: විශ්වාසනීය මට්ටම සැලකිය යුතු ලෙස අඩු නම්, වෙනත් කෝණයකින් නව රූපයක් ගැනීම හෝ තනි පත්‍රයක වැඩි අවධානයක් යොමු කර ඡායාරූපයක් ගැනීමට උත්සාහ කිරීම හොඳය.</string>
+    <string name="before_taking_any_action_read_the_symptoms_to_make_sure_this_recommended_diagnosis_match_your_problem">කිසියම් ක්‍රියාමාර්ගයක් ගැනීමට පෙර, මෙම නිර්දේශිත රෝග විනිශ්චය ඔබේ ගැටලුවට ගැලපෙන බවට වග බලා ගැනීමට රෝග ලක්ෂණ කියවන්න.</string>
+    <string name="genDisMng">සාමාන්‍ය රෝග කළමනාකරණය</string>
+    <string name="planter">Planter</string>
+    <string name="take_a_picture">පින්තුරයක් ගන්න</string>
+    <string name="add_image">පින්තූර එකතු කරන්න</string>
+    <string name="cultivation_tips">වගා ඉඟි</string>
+    <string name="tomato">තක්කාලි</string>
+    <string name="tea">තේ</string>
+    <string name="strawberry">ස්ට්රෝබෙරි</string>
+    <string name="rice">සහල්</string>
+    <string name="potato">අර්තාපල්</string>
+    <string name="bell_pepper">බෙල් පෙපර්</string>
+    <string name="orange">දොඩම්</string>
+    <string name="grape">මිදි</string>
+    <string name="corn">ඉරිඟු</string>
+    <string name="cherry">චෙරි</string>
+    <string name="banana">කෙසෙල්</string>
+    <string name="apple">ඇපල්</string>
+    <string name="select_crop">බෝග තෝරන්න</string>
+    <string name="preparation_of_soil">පස සකස් කිරීම</string>
+    <string name="sowing">වැපිරීම</string>
+    <string name="adding_manure_and_fertilizers">පොහොර සහ පොහොර එකතු කිරීම</string>
+    <string name="irrigation">ජල කළමනාකරණය</string>
+    <string name="harvesting_and_storage">අස්වනු නෙලීම සහ ගබඩා කිරීම</string>
+    <string name="app_usage">Planter අවධානය යොමු කරන්නේ බෝග පත්‍ර රෝග හඳුනා ගැනීම සඳහා පමණි. Planter වෙනත් කිසිම ආකාරයක වස්තුවක් හඳුනාගත නොහැක. කරුණාකර පහත ශාකවල පත්‍ර රූප ලබා දෙන්න. ඇපල්, කෙසෙල්, චෙරි, ඉරිඟු, මිදි, දොඩම්, බෙල් පෙපර්, අර්තාපල්, සහල්, ස්ට්රෝබෙරි, තේ, තක්කාලි.</string>
+    <string name="disease_control_strategy">රෝග පාලන උපාය</string>
+    <string name="similer_result">සමාන ප්රතිඵල</string>
+
+</resources>

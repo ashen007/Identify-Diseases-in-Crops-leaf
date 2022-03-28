@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_planter_language_selection"
+    android:orientation="vertical"
+    tools:context=".LanguageSelectionActivity">
+
+    <TextView
+        android:id="@+id/select_lang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12sp"
+        android:layout_marginTop="48sp"
+        android:layout_marginRight="12sp"
+        android:layout_marginBottom="50sp"
+        android:fontFamily="@font/abel"
+        android:text="@string/select_your_planter_language"
+        android:textAlignment="center"
+        android:textColor="@color/light_text"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/selcet_eng"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24sp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/select_sin"
+            android:layout_width="200sp"
+            android:layout_height="52sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginBottom="28sp"
+            android:background="@drawable/planter_button"
+            android:fontFamily="@font/abel"
+            android:gravity="center"
+            android:text="@string/sinhala"
+            android:textColor="@color/light_text"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.498"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="278dp" />
+
+        <TextView
+            android:id="@+id/selcet_eng"
+            android:layout_width="200sp"
+            android:layout_height="52sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginBottom="28sp"
+            android:background="@drawable/planter_button"
+            android:fontFamily="@font/abel"
+            android:gravity="center"
+            android:text="@string/english"
+            android:textColor="@color/light_text"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/select_sin"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintVertical_bias="0.786" />
+
+        <TextView
+            android:id="@+id/select_tam"
+            android:layout_width="200sp"
+            android:layout_height="52sp"
+            android:layout_marginTop="12sp"
+            android:layout_marginBottom="28sp"
+            android:background="@drawable/planter_button"
+            android:fontFamily="@font/abel"
+            android:gravity="center"
+            android:text="@string/tamil"
+            android:textColor="@color/light_text"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintTop_toBottomOf="@+id/select_sin"
+            app:layout_constraintVertical_bias="0.141" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

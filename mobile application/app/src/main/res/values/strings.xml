@@ -1,7 +1,61 @@
 <resources>
-    <string name="app_name">ILDD</string>
-    <string name="output">Output</string>
-    <string name="take_image">take image</string>
-    <string name="load_image">load image</string>
-    <string name="results">results</string>
+
+    <string name="app_name">planter</string>
+    <string name="detect_disease_of_your_crop">Detect disease of your crop</string>
+    <string name="previous_detections">Previous detections</string>
+    <string name="confidence">confidence</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="more_info">More info</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="organic_control">Organic control</string>
+    <string name="chemical_control">Chemical control</string>
+    <string name="caution_if_confidance_level_remakablly_low_it_s_good_to_take_new_image_from_different_angle_or_try_to_take_more_focus_photo_of_a_single_leaf">Caution: if confidence level remarkably low it\'s good to take new image from different angle or try to take more focus photo of a single leaf.</string>
+    <string name="before_taking_any_action_read_the_symptoms_to_make_sure_this_recommended_diagnosis_match_your_problem">Before taking any action, read the symptoms to make sure this recommended diagnosis match your problem.</string>
+    <string name="genDisMng">General disease management</string>
+    <string name="planter">Planter</string>
+    <string name="take_a_picture">Take a picture</string>
+    <string name="add_image">Add image</string>
+    <string name="cultivation_tips">Cultivation tips</string>
+    <string name="tomato">Tomato</string>
+    <string name="tea">Tea</string>
+    <string name="strawberry">Strawberry</string>
+    <string name="rice">Rice</string>
+    <string name="potato">Potato</string>
+    <string name="bell_pepper">Bell pepper</string>
+    <string name="orange">Orange</string>
+    <string name="grape">Grape</string>
+    <string name="corn">Corn</string>
+    <string name="cherry">Cherry</string>
+    <string name="banana">Banana</string>
+    <string name="apple">Apple</string>
+    <string name="select_crop">Select crops</string>
+    <string name="preparation_of_soil">Preparation of soil</string>
+    <string name="sowing">Sowing</string>
+    <string name="adding_manure_and_fertilizers">Adding manure \nand fertilizers</string>
+    <string name="irrigation">Irrigation</string>
+    <string name="harvesting_and_storage">Harvesting and storage</string>
+    <string name="app_usage">Planter is focus on crop leaf disease detection only. planter can\'t recognize any other kind of objects. please provide leaf images of following plants. apple, banana, cherry, corn, grape, orange, bell pepper, potato, rice, strawberry, tea, tomato.</string>
+    <string name="disease_control_strategy">Disease control strategy</string>
+    <string name="similer_result">"Similar Results"</string>
+    <string name="sinhala" translatable="false">සිංහල</string>
+    <string name="english" translatable="false">english</string>
+    <string name="tamil" translatable="false">தமிழ்</string>
+    <string name="select_your_planter_language" translatable="false">Select your Planter language</string>
+    <string name="get_start" translatable="false">Get Started</string>
+    <string name="inspect_your_crops" translatable="false">Inspect your crops</string>
+    <string name="take_a_photo_of_your_crops_to_check_are_thoes_healthy_or_not" translatable="false">Take a photo of your crops to check are those healthy or not</string>
+    <string name="what_s_wrong_with_your_crops" translatable="false">What\'s wrong with your crops</string>
+    <string name="get_more_knowladge_about_diseases_affected_to_your_crops_to_much_more_effective_disease_control" translatable="false">Get more knowledge about diseases affected to your crops to much more effective disease control</string>
+    <string name="disease_controlling" translatable="false">Disease controlling</string>
+    <string name="learn_effective_organic_non_organic_disease_controlling_methods_and_cultural_parctices" translatable="false">Learn effective organic, non-organic disease controlling methods and cultural practices</string>
+    <string name="harvest_at_the_right_time" translatable="false">Harvest at the right time</string>
+    <string name="without_damaging_to_plants_harvest_at_the_right_time" translatable="false">Without damaging to plants harvest at the right time</string>
+    <string name="increase_your_yield" translatable="false">Increase your yield</string>
+    <string name="improve_your_cultivation_knowledge_with_our_cultivation_tips" translatable="false">Improve your cultivation knowledge with our cultivation tips</string>
+    <string name="your_cultivation_nconsultant" translatable="false">Your cultivation \nconsultant</string>
+    <string name="variants" translatable="false">Count of most common variants</string>
+    <string name="space_need_for_single_plant" translatable="false">Space needed for a single plant</string>
+    <string name="most_common_challange" translatable="false">Most common challenge</string>
+    <string name="critical_needs" translatable="false">Critical needs</string>
+
 </resources>

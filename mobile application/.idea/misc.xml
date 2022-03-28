@@ -3,7 +3,59 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/ML &amp; DL/Leaf Disease/mobile application/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable-v24/ic_launcher_background_planter.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/bottom_part_card.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/cercular.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/circule.xml" value="0.32" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/frame.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/ic_baseline_error_outline_24.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/ic_baseline_photo_camera_24.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/ic_launcher_foreground_planter.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/ic_outline_add_photo_24.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/ic_planter_flash_screen.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/ic_planter_language_selection.xml" value="0.3675" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/material_rounds.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/paralax_card.xml" value="0.32" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/planter_button.xml" value="0.32" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/round_cards.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/roundcorner.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/roundcorner_text.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/shadow_round.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/table_foot.xml" value="0.32" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/table_row.xml" value="0.32" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/table_top.xml" value="0.32" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/drawable/top_part_card.xml" value="0.3828125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout-v26/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/activity_category.xml" value="0.33" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/activity_category_dtl.xml" value="0.33" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/activity_catrgory_dtl.xml" value="0.28125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/activity_details.xml" value="0.3705263157894737" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/activity_flash.xml" value="0.264" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/activity_language_selection.xml" value="0.33" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/activity_main.xml" value="0.5" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/activity_on_boarding_handling.xml" value="0.28532608695652173" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/activity_tips_category.xml" value="0.33" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/blank_fragment.xml" value="0.2708333333333333" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/custom_dialog.xml" value="0.266304347826087" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/fragment_category.xml" value="0.33" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/fragment_crops.xml" value="0.33" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/fragment_cult_tip_results.xml" value="0.36666666666666664" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/fragment_detail_level.xml" value="0.33" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/fragment_level.xml" value="0.33" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/fragment_level_result.xml" value="0.33" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/fragment_on_board.xml" value="0.25181159420289856" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/fragment_on_board_final.xml" value="0.33" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/fragment_on_board_five.xml" value="0.33" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/fragment_on_board_four.xml" value="0.28532608695652173" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/fragment_on_board_one.xml" value="0.5" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/fragment_on_board_three.xml" value="0.28532608695652173" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/fragment_on_board_two.xml" value="0.28532608695652173" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/img_slider_item.xml" value="0.2848731884057971" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/item_detail.xml" value="0.33" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/item_image.xml" value="0.28125" />
+        <entry key="..\:/ProjectLibrary/project_planter_app/app/src/main/res/layout/item_photo.xml" value="0.2753623188405797" />
       </map>
     </option>
   </component>

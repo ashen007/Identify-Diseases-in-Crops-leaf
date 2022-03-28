@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">planter</string>
+    <string name="detect_disease_of_your_crop">உங்கள் பயிரின் நோயைக் கண்டறியவும்</string>
+    <string name="previous_detections">முந்தைய கண்டறிதல்கள்</string>
+    <string name="confidence">நம்பிக்கை</string>
+    <string name="symptoms">அறிகுறிகள்</string>
+    <string name="more_info">மேலும் தகவல்</string>
+    <string name="recommendations">பரிந்துரைகள்</string>
+    <string name="organic_control">கரிம கட்டுப்பாடு</string>
+    <string name="chemical_control">இரசாயன கட்டுப்பாடு</string>
+    <string name="caution_if_confidance_level_remakablly_low_it_s_good_to_take_new_image_from_different_angle_or_try_to_take_more_focus_photo_of_a_single_leaf">எச்சரிக்கை: நம்பிக்கை நிலை குறிப்பிடத்தக்க வகையில் குறைவாக இருந்தால், வெவ்வேறு கோணங்களில் இருந்து புதிய படங்களை எடுப்பது நல்லது அல்லது ஒற்றை இலையில் அதிக கவனம் செலுத்தும் புகைப்படங்களை எடுக்க முயற்சிப்பது நல்லது.</string>
+    <string name="before_taking_any_action_read_the_symptoms_to_make_sure_this_recommended_diagnosis_match_your_problem">எந்த நடவடிக்கையும் எடுப்பதற்கு முன், இந்த பரிந்துரைக்கப்பட்ட நோயறிதல் உங்கள் பிரச்சனைக்கு பொருந்துமா என்பதை உறுதிப்படுத்த அறிகுறிகளைப் படிக்கவும்.</string>
+    <string name="genDisMng">பொது நோய் மேலாண்மை</string>
+    <string name="planter">Planter</string>
+    <string name="take_a_picture">படம் எடு</string>
+    <string name="add_image">படத்தைச் சேர்க்கவும்</string>
+    <string name="cultivation_tips">சாகுபடி குறிப்புகள்</string>
+    <string name="tomato">தக்காளி</string>
+    <string name="tea">தேநீர்</string>
+    <string name="strawberry">ஸ்ட்ராபெர்ரி</string>
+    <string name="rice">அரிசி</string>
+    <string name="potato">உருளைக்கிழங்கு</string>
+    <string name="bell_pepper">பெல் மிளகு</string>
+    <string name="orange">ஆரஞ்சு</string>
+    <string name="grape">திராட்சை</string>
+    <string name="corn">சோளம்</string>
+    <string name="cherry">செர்ரி</string>
+    <string name="banana">வாழை</string>
+    <string name="apple">ஆப்பிள்</string>
+    <string name="select_crop">பயிர்களைத் தேர்ந்தெடுக்கவும்</string>
+    <string name="preparation_of_soil">மண் தயாரித்தல்</string>
+    <string name="sowing">விதைத்தல்</string>
+    <string name="adding_manure_and_fertilizers">உரம் மற்றும் உரங்கள் சேர்த்தல்</string>
+    <string name="irrigation">நீர் மேலாண்மை</string>
+    <string name="harvesting_and_storage">அறுவடை மற்றும் சேமிப்பு</string>
+    <string name="app_usage">Planter பயிர் இலை நோய்களைக் கண்டறிவதில் மட்டுமே கவனம் செலுத்தப்படுகிறது. நடுபவர் வேறு எந்த வகையான பொருளையும் அடையாளம் காண முடியாது. பின்வரும் தாவரங்களின் இலைப் படங்களை வழங்கவும். ஆப்பிள்கள், வாழைப்பழங்கள், செர்ரிகள், சோளம், திராட்சை, ஆரஞ்சு, மணி மிளகுத்தூள், உருளைக்கிழங்கு, அரிசி, ஸ்ட்ராபெர்ரி, தேநீர், தக்காளி.</string>
+    <string name="disease_control_strategy">நோய் கட்டுப்பாட்டு உத்தி</string>
+    <string name="similer_result">இதே போன்ற முடிவுகள்</string>
+
+</resources>

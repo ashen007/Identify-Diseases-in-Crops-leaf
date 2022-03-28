@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_bg_glob"
+    android:orientation="vertical"
+    tools:context=".fragments.FragmentCrops">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/select_crop_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12sp"
+            android:fontFamily="@font/abel"
+            android:text="@string/select_crop"
+            android:textColor="@color/dark_text"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12sp"
+                android:layout_marginTop="24sp"
+                android:layout_marginEnd="12sp"
+                android:layout_marginBottom="24sp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/cat1"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/cercular"
+                        android:elevation="4sp"
+                        android:padding="16sp"
+                        android:src="@drawable/ic_apple" />
+
+                    <ImageView
+                        android:id="@+id/cat2"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/cercular"
+                        android:elevation="4sp"
+                        android:padding="16sp"
+                        android:src="@drawable/ic_banana" />
+
+                    <ImageView
+                        android:id="@+id/cat3"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/cercular"
+                        android:elevation="4sp"
+                        android:padding="16sp"
+                        android:src="@drawable/ic_cherry" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cat1_text"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:fontFamily="@font/abel"
+                        android:gravity="bottom"
+                        android:text="@string/apple"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/cat2_text"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:fontFamily="@font/abel"
+                        android:gravity="bottom"
+                        android:text="@string/banana"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/cat3_text"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:fontFamily="@font/abel"
+                        android:gravity="bottom"
+                        android:text="@string/cherry"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12sp"
+                android:layout_marginEnd="12sp"
+                android:layout_marginBottom="24sp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/cat4"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/cercular"
+                        android:elevation="4sp"
+                        android:padding="16sp"
+                        android:src="@drawable/ic_corn" />
+
+                    <ImageView
+                        android:id="@+id/cat5"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/cercular"
+                        android:elevation="4sp"
+                        android:padding="16sp"
+                        android:src="@drawable/ic_grape" />
+
+                    <ImageView
+                        android:id="@+id/cat6"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/cercular"
+                        android:elevation="4sp"
+                        android:padding="16sp"
+                        android:src="@drawable/ic_orange" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cat4_text"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:fontFamily="@font/abel"
+                        android:gravity="bottom"
+                        android:text="@string/corn"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/cat5_text"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:fontFamily="@font/abel"
+                        android:gravity="bottom"
+                        android:text="@string/grape"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/cat6_text"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:fontFamily="@font/abel"
+                        android:gravity="bottom"
+                        android:text="@string/orange"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12sp"
+                android:layout_marginEnd="12sp"
+                android:layout_marginBottom="24sp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/cat7"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/cercular"
+                        android:elevation="4sp"
+                        android:padding="16sp"
+                        android:src="@drawable/ic_bell_papper" />
+
+                    <ImageView
+                        android:id="@+id/cat8"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/cercular"
+                        android:elevation="4sp"
+                        android:padding="16sp"
+                        android:src="@drawable/ic_potato" />
+
+                    <ImageView
+                        android:id="@+id/cat9"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/cercular"
+                        android:elevation="4sp"
+                        android:padding="16sp"
+                        android:src="@drawable/ic_rice" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cat7_text"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:fontFamily="@font/abel"
+                        android:gravity="bottom"
+                        android:text="@string/bell_pepper"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/cat8_text"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:fontFamily="@font/abel"
+                        android:gravity="bottom"
+                        android:text="@string/potato"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/cat9_text"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:fontFamily="@font/abel"
+                        android:gravity="bottom"
+                        android:text="@string/rice"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/row4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="12sp"
+                android:layout_marginEnd="12sp"
+                android:layout_marginBottom="24sp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/cat10"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/cercular"
+                        android:elevation="4sp"
+                        android:padding="16sp"
+                        android:src="@drawable/ic_strawberry" />
+
+                    <ImageView
+                        android:id="@+id/cat11"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/cercular"
+                        android:elevation="4sp"
+                        android:padding="16sp"
+                        android:src="@drawable/ic_tea" />
+
+                    <ImageView
+                        android:id="@+id/cat12"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
+                        android:layout_margin="12sp"
+                        android:background="@drawable/cercular"
+                        android:elevation="4sp"
+                        android:padding="16sp"
+                        android:src="@drawable/ic_tomato" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/cat10_text"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:fontFamily="@font/abel"
+                        android:gravity="bottom"
+                        android:text="@string/strawberry"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/cat11_text"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:fontFamily="@font/abel"
+                        android:gravity="bottom"
+                        android:text="@string/tea"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                    <TextView
+                        android:id="@+id/cat12_text"
+                        android:layout_width="100sp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="12sp"
+                        android:fontFamily="@font/abel"
+                        android:gravity="bottom"
+                        android:text="@string/tomato"
+                        android:textAlignment="center"
+                        android:textColor="@color/dark_text"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        tools:ignore="RtlCompat" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
